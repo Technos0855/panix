@@ -1,0 +1,5 @@
+linux-*
+busybox-*
+initramfs.cpio.gz
+.config
+.gdb_history
