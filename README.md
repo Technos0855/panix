@@ -35,6 +35,12 @@ gdb ./linux-6.12.61/vmlinux
 pwndbg> target remote :1234
 ```
 
+## LKM modules
+
+You can putting your own LKM module source files in `src` directory and build them by running `./build_lkm` to save the compiled `.ko` files into the root directory of the emulator.
+
+Also, I provided some example LKM modules in `tests` directory you can try.
+
 ## FAQ
 
 Q: pwndbg's `vmmap` is broken when debugging the kernel ?<br/>
