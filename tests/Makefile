@@ -1,7 +1,6 @@
 KERNEL_VERSION=6.12.61
 
-# add your own modules here!
-obj-m = example.o
+obj-m = log.o dev_char.o
 
 all:
 	echo $(OBJECTS)

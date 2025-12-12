@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+echo "[*] Building LKM modules..."
+cd src
+make -j"$(nproc)" all
+cd ..
+cp src/*.ko fs/

@@ -145,13 +145,13 @@ make -C "busybox-$BUSYBOX_VERSION" -j"$(nproc)"
 make -C "busybox-$BUSYBOX_VERSION" install
 
 echo "[*] Building filesystem..."
-mkdir -pv fs/{bin,sbin,etc,proc,sys,usr/bin,usr/sbin,root,home/panix}
+mkdir -pv fs/{bin,sbin,etc,proc,sys,usr/bin,usr/sbin,root,tests,home/panix}
 cp -a "busybox-$BUSYBOX_VERSION/_install/"* fs/
 
-echo "[*] Building LKM modules..."
-cd src
+echo "[*] Building example LKM modules..."
+cd tests
 make -j"$(nproc)" all
 cd ..
-cp src/*.ko fs/
+cp tests/*.ko fs/tests
 
 echo "[+] Done."
