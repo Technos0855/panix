@@ -17,5 +17,6 @@ fs/bin
 fs/linuxrc
 fs/sbin
 fs/usr
-.tar.gz
-.gz
+*.tar.gz
+*.gz
+*.log
