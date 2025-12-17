@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-KERNEL_VERSION=6.12.61
+KERNEL_VERSION=5.4
 
 # build root fs
 
