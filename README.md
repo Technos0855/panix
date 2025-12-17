@@ -6,14 +6,24 @@ Let's make the kernel panic *:evilface:*
 
 ## Prerequisite
 
-All the dependencies for building the kernel.
+Docker + Docker BuildKit
 
 ## Build
 
-Building the kernel, busybox, and demo modules:
+Building the kernel, busybox inside the docker environment:
 
 ```bash
-./build
+docker build . --output type=local,dest=.
+```
+
+If you're using host proxy, you may need to pass add an extra argument `--network=host`.
+
+By default, it will build `kernel-5.4` and `busybox-1.36.1`, you can change it in Dockerfile or pass as argument like `--build-arg KERNEL_VERSION_ARG=`, and newer kernel version might need newer glibc version, so you should change the ubuntu version which used in `builder` stage.
+
+After build, it'll result 2 release files in this directory, you should extract kernel by:
+
+```bash
+tar -zxvf linux-5.4.tar.gz
 ```
 
 ## Launch
@@ -37,9 +47,7 @@ pwndbg> target remote :1234
 
 ## LKM modules
 
-You can putting your own LKM module source files in `src` directory and build them by running `./build_lkm` to save the compiled `.ko` files into the root directory of the emulator.
-
-Also, I provided some example LKM modules in `tests` directory you can try.
+You can putting your own LKM module source files in `src` directory and build them by running `./build_lkm`. After build, re-run the emulate script to apply, it will be lye on root directory.
 
 ## FAQ
 
