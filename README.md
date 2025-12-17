@@ -13,7 +13,7 @@ Docker + Docker BuildKit
 Building the kernel, busybox inside the docker environment:
 
 ```bash
-docker build . --output type=local,dest=.
+docker build . --output type=local,dest=. 2>&1 | tee build.log
 ```
 
 If you're using host proxy, you may need to pass add an extra argument `--network=host`.
