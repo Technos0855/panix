@@ -53,7 +53,7 @@ RUN useradd -m -s /bin/bash builder && \
 
 USER builder
 WORKDIR /home/builder
-COPY --chown=builder:builder . /home/builder
+COPY --chown=builder:builder build fs /home/builder/
 
 RUN mkdir -p ~/.gnupg && chmod 700 ~/.gnupg && \
   printf '%s\n' \
@@ -64,7 +64,12 @@ RUN mkdir -p ~/.gnupg && chmod 700 ~/.gnupg && \
   > ~/.gnupg/gpg.conf && \
   chmod 600 ~/.gnupg/gpg.conf
 
-RUN chmod u+x build && ./build
+RUN chmod u+x build && \
+  ./build import_gpg_keys && \
+  ./build fetch_sources && \
+  ./build extract_sources
+
+RUN ./build build_all
 
 RUN tar -zcvf linux-${KERNEL_VERSION}.tar.gz -C /home/builder linux-${KERNEL_VERSION} && \
   tar -zcvf busybox-${BUSYBOX_VERSION}.tar.gz -C /home/builder busybox-${BUSYBOX_VERSION}
